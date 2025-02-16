@@ -23,7 +23,7 @@ window.onload = function() {
     
     //TEMPO LIMITE//
     setTimeout(() =>{
-        loadScreen.classList.add('w-0')
+        loadScreen.classList.add('w-[0]')
         
         body.classList.remove('overflow-hidden')
         loadImage.classList.add('opacity-0')
