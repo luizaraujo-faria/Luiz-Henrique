@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animation-duration-1000 {
+        animation-duration: 1s;
+    }
+    .animation-duration-1250 {
+        animation-duration: 1.25s;
+    }
+    .animation-duration-1500 {
+        animation-duration: 1.5s;
+    }
+}
