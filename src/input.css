@@ -12,4 +12,16 @@
     .animation-duration-1500 {
         animation-duration: 1.5s;
     }
+    .animation-duration-1750 {
+        animation-duration: 1.75s;
+    }
+    .animation-duration-2000 {
+        animation-duration: 2s;
+    }
+    .animation-duration-2250 {
+        animation-duration: 1.25s;
+    }
+    .animation-duration-2500 {
+        animation-duration: 2.5s;
+    }
 }

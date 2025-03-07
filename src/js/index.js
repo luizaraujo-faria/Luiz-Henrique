@@ -15,6 +15,7 @@ window.addEventListener('scroll', () => {
 })
 
 //TELA DE CARREGAMENTO//
+/*
 window.onload = function() {
     let loadScreen = document.querySelector('#load-screen')
     let loadImage = document.querySelector('#load-img')
@@ -31,7 +32,7 @@ window.onload = function() {
 
     },2000)
 }
-
+*/
 //BARRA DE OPÇOES//
 
 const clickDivs = document.querySelectorAll('[data-target]')
