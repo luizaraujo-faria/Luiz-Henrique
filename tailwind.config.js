@@ -171,11 +171,11 @@ module.exports = {
         },
         '.scrollbar': {
           '&::-webkit-scrollbar': {
-            width: '10px',
-            height: '100%',
+            width: '100%',
+            height: '10px',
           },
           '&::-webkit-scrollbar-thumb': {
-            backgroundColor: '#000',
+            backgroundColor: '#ecce7a',
             cursor: 'pointer',
           },
           '&::-webkit-scrollbar-track': {
@@ -189,6 +189,7 @@ module.exports = {
           },
           '&::-webkit-scrollbar-thumb': {
             backgroundColor: '#ecce7a',
+            cursor: 'pointer',
           },
           '&::-webkit-scrollbar-track': {
             backgroundColor: '#000000',

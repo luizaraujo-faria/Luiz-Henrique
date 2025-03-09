@@ -15,7 +15,6 @@ window.addEventListener('scroll', () => {
 })
 
 //TELA DE CARREGAMENTO//
-/*
 window.onload = function() {
     let loadScreen = document.querySelector('#load-screen')
     let loadImage = document.querySelector('#load-img')
@@ -24,7 +23,7 @@ window.onload = function() {
     
     //TEMPO LIMITE//
     setTimeout(() =>{
-        loadScreen.classList.add('w-[0]')
+        loadScreen.classList.add('w-0')
         
         body.classList.remove('overflow-hidden')
         loadImage.classList.add('opacity-0')
@@ -32,9 +31,8 @@ window.onload = function() {
 
     },2000)
 }
-*/
-//BARRA DE OPÇOES//
 
+//BARRA DE OPÇOES//
 const clickDivs = document.querySelectorAll('[data-target]')
 
 //FUNÇÃO PARA CADA DIV//
@@ -84,34 +82,43 @@ prevButton.addEventListener('click', () => {
 setInterval(() => {
     nextButton.click()
 },5000)
-//DARK/WHITE MODE//
 
-let modeBar = document.querySelector('.modebar')//BARRA DE MODO
-let mode = document.querySelector('.mode')//BOTÃO DE MODO
-let modeHead = document.querySelector('.modehead')
-let header = document.querySelector('header')//HEADER
-let texts = document.querySelectorAll('.texts')//TODOS OS TEXTOS
-let section = document.querySelectorAll('.container')//TODAS AS SESSOES
-let slideArticle = document.querySelectorAll('.slide article')
-let html = document.querySelector('html')//CHAMA HTML
+//EFEITO LINKS DE NAVEGAÇÃO//
+document.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY
 
-modeBar.addEventListener('click', () => {
-    mode.classList.toggle('bg-white')
-    mode.classList.toggle('translate-x-[150%]')
-    modeHead.classList.toggle('max-sm:bg-white')
+    document.querySelectorAll('.sections').forEach((sections) => {
+        
+        let id = sections.getAttribute('id')
+        let offsetTop = sections.offsetTop - 100
+        let offsetBottom = offsetTop + sections.offsetHeight
 
-    header.classList.toggle('bg-white')
-    html.classList.toggle('dark')
-
-    //PARA CADA ESCRITA//
-    texts.forEach(texts => {
-        texts.classList.toggle('dark:text-black')
-    })
-    slideArticle.forEach(slideArticle => {
-        slideArticle.classList.toggle('bg-whitefade')
-    })
-    //PARA CADA SESSAO//
-    section.forEach(section => {
-        section.classList.toggle('bg-white')
+        if(scrollPosition >= offsetTop && scrollPosition < offsetBottom){
+            document.querySelectorAll('.links').forEach((links) => {
+    
+                links.classList.remove('before:scale-y-[1]', 'text-[#000000]')
+                if (links.getAttribute('href') === `#${id}`) {
+                  links.classList.add('before:scale-y-[1]', 'text-[#000000]')
+                }
+            })
+        }
     })
 })
+
+//BARRA DE MENU//
+const mediaQuery = window.matchMedia("(width < 640px)");{
+
+    const menuIcon = document.getElementById('icon-menu')
+    const closeIcon = document.getElementById('icon-close')
+    const menuBar = document.getElementById('menu-bar')
+    const body = document.querySelector('body')
+
+    menuIcon.addEventListener('click', () => {
+        menuBar.classList.add('translate-x-[0%]')
+        body.classList.add('overflow-y-hidden')
+    })
+    closeIcon.addEventListener('click', () => {
+        menuBar.classList.remove('translate-x-[0%]')
+        body.classList.remove('overflow-y-hidden')
+    })
+}

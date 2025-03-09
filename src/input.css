@@ -24,4 +24,10 @@
     .animation-duration-2500 {
         animation-duration: 2.5s;
     }
+    .active{
+        color: #000;
+    }
+    .active::before{
+        transform: scale(1);
+    }
 }
