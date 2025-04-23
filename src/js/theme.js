@@ -4,7 +4,7 @@ let mode = document.querySelector('.mode')//BOTÃO DE MODO
 let modeHead = document.querySelector('.modehead')
 let header = document.querySelector('header')//HEADER
 let texts = document.querySelectorAll('.texts')//TODOS OS TEXTOS
-let section = document.querySelectorAll('.container')//TODAS AS SESSOES
+let section = document.querySelectorAll('.sections')//TODAS AS SESSOES
 let slideArticle = document.querySelectorAll('.slide article')
 let html = document.documentElement
 

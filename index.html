@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--SEO DA PÁGINA-->
-    <meta name="description" content="Portfólio de Luiz Henrique, desenvolvedor web front-end e back-end. Veja projetos, habilidades e serviços oferecidos.">
-    <meta name="keywords" content="Luiz Henrique, portfólio, desenvolvedor web, front-end, back-end, JavaScript, Node.js, MySQL, TailwindCSS, projetos de sites">
+    <meta name="description" content="Portfólio de Luiz Henrique, desenvolvedor web full-stack. Veja projetos, habilidades e serviços oferecidos.">
+    <meta name="keywords" content="Luiz Henrique Araujo, Full-Stack, Web Development, Software Development">
     <meta name="author" content="Luiz Henrique Araujo">
     
     <!--REDES SOCIAIS-->
     <meta property="og:title" content="Portfólio de Luiz Henrique">
-    <meta property="og:description" content="Portfólio de Luiz Henrique, desenvolvedor web front-end e back-end, com projetos e habilidades em JavaScript, Node.js e mais.">
-    <meta property="og:image" content="URL_da_imagem_de_preview">
+    <meta property="og:description" content="Portfólio de Luiz Henrique, desenvolvedor web full-stack, com projetos e habilidades em JavaScript, Node.js e mais.">
+    <meta property="og:image" content="./src/assets/img/Minha Foto Perfil.jpeg">
     <meta property="og:url" content="URL_do_seu_site">
     <meta property="og:type" content="website">
     
@@ -25,12 +25,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center flex-col scrollbar-body overflow-hidden">
+<body class="flex items-center justify-center flex-col scrollbar-body">
     <!--TELA DE CARREGAMENTO-->
-    <div id="load-screen" class="w-full h-screen fixed top-0 z-[100] bg-black flex items-center justify-center transition-all duration-700">
+    <!--<div id="load-screen" class="w-full h-screen fixed top-0 z-[100] bg-black flex items-center justify-center transition-all duration-700">
         <div id="load-bar" class="w-72 h-72 rounded-full animate-spin bg-black border-t-2 border-zero border-solid transition-all duration-500 max-sm:w-64 max-sm:h-64"></div>
         <img src="./src/assets/img/Minha foto - perfil.webp" id="load-img" class="w-64 border-2 border-zero p-1 absolute rounded-full transition-all duration-500 brightness-75 max-sm:w-56">
-    </div>
+    </div>-->
     <!--HEADER-->
     <header class="w-full h-14 bg-black fixed top-0 z-[80] flex transition-all duration-300 max-sm:flex-box max-sm:justify-between max-sm:p-5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" id="icon-menu" class="size-8 hidden text-zero dark:text-black cursor-pointer max-sm:flex">
@@ -46,7 +46,9 @@
                 <li><a href="#contact" class="links texts text-zero text-shadow-sm text-[1rem] relative before:content-[''] before:absolute before:bottom-0 before:left-[-7%] before:w-[115%] before:h-full before:transition-all before:duration-300 before:ease-custom-ease before:z-[-1] before:scale-y-[0] before:bg-zero hover:before:scale-y-[1] hover:text-black hover:font-medium max-sm:text-xs">CONTATO</a></li>
             </ul>
         </nav>
+        
         <img src="./src/assets/img/Logo.png" class="size-20 hidden max-sm:flex dark:brightness-0" alt="Logo" loading="lazy">
+
         <div class="modehead w-full h-full absolute z-[-1] flex-box justify-end max-sm:h-[25px] max-sm:w-[18%] max-sm:static">
             <div class="modebar bg-zero dark:bg-black w-[5%] h-[50%] rounded-full relative right-[5%] cursor-pointer max-sm:right-0 max-sm:h-full max-sm:w-full max-sm:max-w-full max-sm:flex max-sm:items-center">
                 <div class="mode w-2/5 h-full bg-black rounded-full absolute scale-[.9] max-sm:h-[90%] transition-all duration-300 flex-box">
@@ -79,19 +81,19 @@
                 </ul>
             </nav>
         </section>
-        <footer class="w-full h-1/4 flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px]">
+        <footer class="w-full h-1/6 flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px]">
             <h1 class="texts text-white text-xl font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
             <div class="flex items-center justify-around">
-                <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-                <a href="https://www.linkedin.com/in/luiz-henrique-araujo-farias-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-                <a href="https://www.instagram.com/luizaraujo_farias/"><img src="./src/assets/img/icon-instagram.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
+                <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
+                <a href="https://www.linkedin.com/in/luiz-henrique-araujo-farias-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
+                <a href="https://www.instagram.com/luizaraujo_farias/"><img src="./src/assets/img/icon-instagram.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
             </div>
         </footer>
     </aside>
     <!--CONTEUDO PRINCIPAL-->
     <main class="w-full overflow-hidden">
         <!--SESSAO DE INTRODUÇÃO-->
-        <section style="background-image: url('./src/assets/banner/pc.webp');" id="home" class="sections container bg-fixed bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-50 before:z-10 max-sm:min-h-[50vh] max-sm:max-h-[50svh]">
+        <section style="background-image: url('./src/assets/banner/pc.webp');" id="home" class="sections bg-fixed bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black before:opacity-50 before:z-10 max-sm:min-h-[50vh] max-sm:max-h-[50svh]">
             
             <div class="w-auto h-full absolute bottom-[-10%] z-20 flex items-center justify-center flex-col max-sm:bottom-[0%]">
                 <h2 class="text-4xl text-white font-afacad font-light overflow-hidden whitespace-nowrap tracking-[2px] max-sm:text-2xl"><span class="text-one">Olá,</span> me chamo</h2>
@@ -109,17 +111,17 @@
             </div>
         </section>
         <!--SESSAO SOBRE-->
-        <section id="about" class="sections container h-[100vh] bg-black max-sm:h-[100vh] max-sm:min-h-screen max-sm:max-h-screen max-sm:overflow-visible">
+        <section id="about" class="sections h-[100vh] bg-black max-sm:h-[90vh] max-sm:max-h-[90vh] max-sm:overflow-visible">
             <div class="grid grid-cols-2 place-items-center absolute top-40 max-sm:grid-cols-1 max-sm:gap-10">
 
-                <img src="./src/assets/img/Minha foto - perfil.webp" class="borded w-2/4  grid-start-1 border-2 border-one border-solid p-1 rounded-full animate-float transition-all duration-300 dark:border-black max-sm:p-0 max-sm:w-2/5 max-sm:absolute max-sm:top-[-230px] max-sm:z-50 max-sm:border-[6px] max-sm:border-black dark:max-sm:border-white max-sm:animate-none" loading="lazy">
-                <article class="grid-start-2 flex-box-column items-start w-[95%] gap-7 max-sm:items-center">
+                <img src="./src/assets/img/Minha Foto Perfil.jpeg" class="borded w-2/4  grid-start-1 border-2 border-one border-solid p-1 rounded-full animate-float transition-all duration-300 dark:border-yellow-800 max-sm:p-0 max-sm:w-3/6 max-sm:absolute max-sm:top-[-230px] max-sm:z-50 max-sm:border-[6px] max-sm:border-black dark:max-sm:border-white max-sm:animate-none" loading="lazy">
+                <article class="grid-start-2 flex-box-column items-start w-[90%] gap-7 max-sm:items-center">
                     
                     <div class="w-[55%]">
                         <h1 class="dark:text-yellow-800 h-[70px] text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl max-sm:h-[50px]">Conheça-me</h1>
                     </div>
-                    <p class="texts text-white text-justify text-[1.1rem] text-shadow-sm max-sm:text-[1rem]">Me chamo <span class="text-zero dark:text-yellow-800">Luiz Henrique</span>, tenho 16 anos e sou aluno do segundo ano de desenvolvimento de sistemas na Etec Basilides de Godoy.
-                        Sou desenvolvedor web e <span class="text-zero dark:text-yellow-800">front-end</span>, estou sempre me dedicando e aprimorando meus conhecimentos cada vez mais até me tornar um <span class="text-zero dark:text-yellow-800">dev full-stack</span>.
+                    <p class="texts text-white text-justify text-[1.1rem] text-shadow-sm max-sm:text-[1rem]">Me chamo <span class="text-zero dark:text-yellow-800">Luiz Henrique</span>, tenho 16 anos e sou aluno do segundo ano do M-Tec em desenvolvimento de sistemas na Etec Basilides de Godoy.
+                        Sou desenvolvedor web e <span class="text-zero dark:text-yellow-800">full-stack</span>, estou sempre me dedicando e aprimorando meus conhecimentos cada vez mais até me tornar um <span class="text-zero dark:text-yellow-800">dev mais experiente</span>.
                     </p>
                     <p class="texts text-white text-justify text-[1.1rem] text-shadow-sm max-sm:text-[1rem]">
                         Sou bem <span class="text-zero dark:text-yellow-800">adaptável</span> e <span class="text-zero dark:text-yellow-800">proativo</span>, além de sempre me manter <span class="text-zero dark:text-yellow-800">organizado</span>. Gosto de <span class="text-zero dark:text-yellow-800">aprender</span> novas coisas e cooperar em <span class="text-zero dark:text-yellow-800">trabalho em equipe</span>.
@@ -135,9 +137,9 @@
 
         </section>
         <!--SESSAO DE SKILLS, PORTIFOLIO E SERVIÇOS-->
-        <section id="works" class="works sections container h-[140vh] bg-black items-start p-5 max-sm:h-[140vh] max-sm:min-h-[140vh] max-sm:max-h-[140vh]">
-            <!--CONTAINERS DE CONTEUDOS-->
-            <div class="w-full h-40 flex-box gap-5 p-3 max-sm:flex-box-column max-sm:justify-start  max-sm:p-0">
+        <section id="works" class="works sections h-[140vh] bg-black flex-box-column justify-start p-5 max-sm:h-[155vh] max-sm:max-h-[155vh] max-sm:justify-between">
+            <!--S DE CONTEUDOS-->
+            <div class="w-full h-40 relative flex-box gap-5 p-3 max-sm:flex-box-column max-sm:justify-start  max-sm:p-0">
                 <div class="content-box flex-box-column group hover:animate-hoverfloat hover:rounded-[0px] max-sm:w-full z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:size-28">
                     <h1 class="text-zero text-3xl font-thin group-hover:text-black texts">Habilidades</h1>
                     <p class="text-white text-xl font-light text-center group-hover:text-black texts max-sm:hidden">Meus <span class="text-zero dark:text-yellow-800 group-hover:text-black">conhecimentos</span> e habilidades técnicas.</p>
@@ -155,53 +157,53 @@
                 </div>
             </div>
             <!--SESSAO DE CONHECIMENTOS-->
-            <section id="container-1" class="w-full h-screen absolute bottom-[2%] flex-box transition-all duration-30 max-sm:h-[85vh]">
-                <div class="w-full h-[90vh] flex-box-column gap-12 p-[10px] max-sm:justify-start max-sm:p-5">
+            <section id="container-1" class="w-full h-screen relative bottom-[0%] flex-box transition-all duration-30 max-sm:h-[100vh] max-sm:max-h-[100vh] max-sm:items-end">
+                <div class="w-full h-[90vh] flex-box-column gap-12 p-[10px] max-sm:justify-start max-sm:h-fit max-sm:max-h-fit">
                     <!--SESSÃO DE ICONES-->
-                    <section class="w-3/4 h-1/5 flex-box gap-5 border-b-[1px] border-b-white dark:border-b-yellow-800 max-sm:border-none max-sm:w-full max-sm:flex-wrap max-sm:flex-row max-sm:gap-0 max-sm:h-auto">
+                    <section class="w-full h-1/5 flex-box gap-5 dark:border-b-yellow-800 max-sm:border-none max-sm:w-full max-sm:flex-wrap max-sm:flex-row max-sm:gap-0 max-sm:h-auto">
                         <div class="cards animate-float animation-duration-1000 ">
-                            <img src="./src/assets/img/icon-html-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-html-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-1250 ">
-                            <img src="./src/assets/img/icon-css-cor.png" class="size-20 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-css-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-1500 ">
-                            <img src="./src/assets/img/icon-js-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
-                        </div>
-                        <div class="cards animate-float animation-duration-1500 ">
-                            <img src="./src/assets/img/icon-react-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-js-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-1750 ">
-                            <img src="./src/assets/img/icon-tailwind-cor.png" class="size-20 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-tailwind-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                        </div>
+                        <div class="cards animate-float animation-duration-1500 ">
+                            <img src="./src/assets/img/icon-react-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-2000 ">
-                            <img src="./src/assets/img/icon-git-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-git-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-2250 ">
-                            <img src="./src/assets/img/icon-mysql-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-mysql-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-2500 ">
-                            <img src="./src/assets/img/icon-csharp-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-csharp-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float animation-duration-2500 ">
-                            <img src="./src/assets/img/icon-node-cor.png" class="size-20 dark:brightness-0 object-cover max-sm:size-12 p-1" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-node-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12 p-1" alt="ICONE-SKILL" loading="lazy">
                         </div>
                     </section>
                     <!--SESSÃO DE INFORMAÇÕES-->
-                    <section class="w-full h-3/4 flex-box justify-evenly max-sm:overflow-hidden max-sm:justify-start max-sm:flex-nowrap max-sm:gap-10 max-sm:overflow-x-scroll max-sm:scrollbar">
+                    <section class="w-full h-3/4 flex-box justify-evenly max-sm:h-[450px] max-sm:overflow-hidden max-sm:justify-start max-sm:flex-nowrap max-sm:gap-10 max-sm:overflow-x-scroll max-sm:scrollbar">
                         <div class="front-end w-[50%] h-full max-sm:w-full max-sm:min-w-full max-sm:flex-none">
                             <article class="w-full h-full flex-box-column justify-start gap-10 p-10 max-sm:p-0">
                                 <h1 class="texts text-zero dark:text-yellow-800 text-3xl font-light tracking-[3px]">FRONT-END</h1>
                                 <p class="texts text-white text-justify"> <span class="text-zero dark:text-yellow-800">HTML & CSS</span> – Desenvolvimento de interfaces <span class="text-zero dark:text-yellow-800">intuitivas, responsivas</span> e <span class="text-zero dark:text-yellow-800">acessíveis</span>, com uso eficiente de tags <span class="text-zero dark:text-yellow-800">semânticas</span> para melhor SEO.<br><br> 
                                     <span class="text-zero dark:text-yellow-800">TailwindCSS</span> - Estilização <span class="text-zero dark:text-yellow-800">ágil</span> e otimizada para layouts <span class="text-zero dark:text-yellow-800">modernos</span> e <span class="text-zero dark:text-yellow-800">eficientes.</span><br><br> 
-                                <span class="text-zero dark:text-yellow-800">JavaScript</span> - Manipulação do <span class="text-zero dark:text-yellow-800">DOM</span>, interatividade dinâmica e <span class="text-zero dark:text-yellow-800">ES6+</span>, sempre em <span class="text-zero dark:text-yellow-800">estudo</span>.</p>
+                                <span class="text-zero dark:text-yellow-800">JavaScript & React.js</span> - Lógica de programação, Manipulação do <span class="text-zero dark:text-yellow-800">DOM</span>, interatividade dinâmica e ES6+. <span class="text-zero dark:text-yellow-800">Aprendendo</span> React, conceito de componentes, estados e <span class="text-zero dark:text-yellow-800">SPA</span>. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span></p>
                             </article>
                         </div>
                         <hr class="w-px h-1/4 bg-white dark:bg-yellow-800 opacity-50 max-sm:hidden">
                         <div class="back-end w-[50%] h-full max-sm:w-full max-sm:min-w-full max-sm:flex-none">
                             <article class="w-full h-full flex-box-column justify-start gap-10 p-10 max-sm:p-0">
                                 <h1 class="texts text-zero dark:text-yellow-800 text-3xl font-light tracking-[3px]">BACK-END</h1>
-                                <p class="texts text-white text-justify"> <span class="text-zero dark:text-yellow-800">SQL/MySQL</span> - Modelagem e <span class="text-zero dark:text-yellow-800">implementação</span> de bancos de dados, com domínio de <span class="text-zero dark:text-yellow-800">DDL, DML</span> e <span class="text-zero dark:text-yellow-800">DQL</span> .<br><br>
+                                <p class="texts text-white text-justify"> <span class="text-zero dark:text-yellow-800">SQL/MySQL</span> - Modelagem e <span class="text-zero dark:text-yellow-800">implementação</span> de bancos de dados, com base sólida em sublinguagens <span class="text-zero dark:text-yellow-800">DDL, DML</span> e <span class="text-zero dark:text-yellow-800">DQL</span> .<br><br>
                                     <span class="text-zero dark:text-yellow-800">C#</span> - Lógica de <span class="text-zero dark:text-yellow-800">programação</span> e desenvolvimento backend básico. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span><br><br>
                             <span class="text-zero dark:text-yellow-800">Node.js</span> - Desenvolvimento <span class="text-zero dark:text-yellow-800">inicial</span> de APIs com Express, incluindo autenticação e CRUD. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span></p>
                             </article>
@@ -263,8 +265,8 @@
     
                     </div>
                 </div>
-                <button class="next texts text-zero text-3xl absolute right-[-5%] z-30 transition-all duration-500 hover:scale-100 max-sm:bottom-[-12%] max-sm:left-[10%]">&#10095;</button>
-                <button class="prev texts text-zero text-3xl absolute left-[-5%] z-30 transition-all duration-500 hover:scale-100 max-sm:bottom-[-12%] max-sm:right-[10%]">&#10094;</button>
+                <button class="next texts cursor-pointer text-zero text-3xl absolute right-[-5%] z-30 transition-all duration-500 hover:scale-100 max-sm:bottom-[-12%] max-sm:left-[10%]">&#10095;</button>
+                <button class="prev texts cursor-pointer text-zero text-3xl absolute left-[-5%] z-30 transition-all duration-500 hover:scale-100 max-sm:bottom-[-12%] max-sm:right-[10%]">&#10094;</button>
             </section>
             <!--SESSAO DE SERVIÇOS-->
             <section id="container-3" class="w-full h-3/4 grid grid-cols-2 place-items-center absolute bottom-12 faded transition-all duration-300 max-sm:grid-cols-1 max-sm:mt-[-20%] max-sm:h-[60%] max-sm:bottom-0">
@@ -282,9 +284,11 @@
 
         </section>
         <!--SESSAO DE imagem-->
-        <section style="background-image: url('./src/assets/banner/pc.webp');" class="container relative h-[60vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-50"></section>
+        <section style="background-image: url('./src/assets/banner/pc.webp');" class="w-full relative flex-box h-[50vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-40 max-sm:h-[30vh]">
+            <img src="./src/assets/img/Logo.png" class="size-56 z-50" alt="Logo">
+        </section>
         <!--SESSAO DE CONTATO-->
-        <section id="contact" class="sections container h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1">
+        <section id="contact" class="sections h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1">
             <div class="w-[24]">
                 <h1 class="dark:text-yellow-800 text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl">Contate-me</h1>
             </div>
@@ -295,7 +299,7 @@
                 <input type="email" name="email" placeholder="Email" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
                 <input type="tel" name="number" placeholder="Telefone" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
                 <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-full h-[50%] text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full scrollbar" required></textarea>
-                <button type="submit" class=" w-2/5 h-[6%] border-zero dark:border-yellow-800 border-solid border-[1px] text-white bg-transparent text-[1.2rem] font-normal dark:text-black relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[5%] hover:text-black dark:hover:border-zero ">ENVIAR</button>
+                <button type="submit" class="w-2/5 h-[6%] cursor-pointer border-zero dark:border-yellow-800 border-solid border-[1px] text-white bg-transparent text-[1.2rem] font-normal dark:text-black relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[5%] hover:text-black dark:hover:border-zero ">ENVIAR</button>
 
                 <input type="hidden" name="_subject" value="Novo Contato!!!">
                 <input type="text" name="_honey" style="display:none">
@@ -304,7 +308,7 @@
 
                 <div class="flex-box-column items-end justify-start w-4/5">
                     <div class="flex-box gap-2">
-                        <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-white text-xl font-light cursor-pointer max-sm:text-xl">+55 (11) 99007-6535</h1></a>
+                        <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-white text-xl font-light cursor-pointer hover:text-zero dark:hover:text-yellow-800 max-sm:text-xl">+55 (11) 99007-6535</h1></a>
                         <img src="./src/assets/img/icon-whatsapp.png" alt="" class="w-6 cursor-pointer max-sm:w-8 dark:brightness-0">
                     </div>
                 </div>
@@ -312,12 +316,12 @@
 
         </section>
     </main>
-    <footer class="container h-40 bg-black flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px]">
-        <h1 class="texts text-white text-xl font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
+    <footer class="sections h-36 bg-black flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px] max-sm:h-32">
+        <h1 class="texts text-white text-[1.2rem] font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
         <div class="flex items-center justify-around">
-            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-            <a href="https://www.linkedin.com/in/luiz-henrique-araujo-farias-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-            <a href="https://www.instagram.com/luizaraujo_farias/"><img src="./src/assets/img/icon-instagram.png" alt="" class="w-7 h-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
+            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.linkedin.com/in/luiz-henrique-araujo-farias-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.instagram.com/luizaraujo_farias/"><img src="./src/assets/img/icon-instagram.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
         </div>
     </footer>
 </body>

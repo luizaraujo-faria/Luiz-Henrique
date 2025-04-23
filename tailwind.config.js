@@ -10,10 +10,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: '#fff',
-        black: '#000',
-        blackfade: 'rgba(0, 0, 0, 0.9)',
-        whitefade: 'rgba(255, 255, 255, 0.9)',
         zero: '#ecce7a',
         one: '#d3b561',
         two:'#c0a450',
@@ -85,7 +81,7 @@ module.exports = {
   plugins: [
     function({ addComponents }) {
       addComponents({
-        '.container': {
+        '.sections': {
           width: '100%',
           maxWidth: '100%', 
           height: '100vh',

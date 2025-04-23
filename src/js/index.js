@@ -56,29 +56,28 @@ clickDivs.forEach(div => {
     })
 })
 
-//SLIDER PROJETOS//
+//SLIDESHOW PROJETOS//
 const slides = document.querySelector('.slides')
 const prevButton = document.querySelector('.prev')
 const nextButton = document.querySelector('.next')
 let currentIndex = 0//VARIAVEL CONTADOR//
 const totalSlides = document.querySelectorAll('.slide').length
 
-//FUNÇÃO PARA PASSAR AS IMAGENS DO SLIDESHOW//
 function showSlide(index) {
     const slideWidth = document.querySelector('.slide').clientWidth
     slides.style.transform = `translateX(-${index * slideWidth}px)`
 }
-//FUNÇÃO DE CLICK PARA BOTAO PROXIMO//
+
 nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalSlides
     showSlide(currentIndex)
 })
-//FUNÇÃO DE CLICK PARA BOTAO VOLTAR//
+
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
     showSlide(currentIndex)
 })
-//AUTOMATIZAÇÃO DO SLIDESHOW//
+
 setInterval(() => {
     nextButton.click()
 },5000)
@@ -96,9 +95,13 @@ document.addEventListener('scroll', () => {
         if(scrollPosition >= offsetTop && scrollPosition < offsetBottom){
             document.querySelectorAll('.links').forEach((links) => {
     
-                links.classList.remove('before:scale-y-[1]', 'text-[#000000]')
+                links.classList.remove('before:scale-y-[1]', 'text-black')
+                links.classList.add('text-zero')
+
                 if (links.getAttribute('href') === `#${id}`) {
-                  links.classList.add('before:scale-y-[1]', 'text-[#000000]')
+
+                    links.classList.remove('text-zero')
+                    links.classList.add('before:scale-y-[1]', 'text-black')
                 }
             })
         }
