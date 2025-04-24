@@ -32,8 +32,8 @@
         <img src="./src/assets/img/Minha foto - perfil.webp" id="load-img" class="w-64 border-2 border-zero p-1 absolute rounded-full transition-all duration-500 brightness-75 max-sm:w-56">
     </div>-->
     <!--HEADER-->
-    <header class="w-full h-14 bg-black fixed top-0 z-[80] flex transition-all duration-300 max-sm:flex-box max-sm:justify-between max-sm:p-5">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" id="icon-menu" class="size-8 hidden text-zero dark:text-black cursor-pointer max-sm:flex">
+    <header class="w-full h-14 bg-black fixed top-0 z-[80] flex transition-all duration-300 max-sm:flex-box  max-sm:p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" id="icon-menu" class="size-8 hidden text-zero dark:text-black cursor-pointer max-sm:flex max-sm:absolute max-sm:left-[5%]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>          
         <nav class="w-[40%] h-full flex-box max-sm:w-full p-5 max-sm:hidden">
@@ -49,7 +49,7 @@
         
         <img src="./src/assets/img/Logo.png" class="size-20 hidden max-sm:flex dark:brightness-0" alt="Logo" loading="lazy">
 
-        <div class="modehead w-full h-full absolute z-[-1] flex-box justify-end max-sm:h-[25px] max-sm:w-[18%] max-sm:static">
+        <div class="modehead w-full h-full absolute z-[-1] flex-box justify-end max-sm:right-[5%]  max-sm:h-[25px] max-sm:w-[17%]">
             <div class="modebar bg-zero dark:bg-black w-[5%] h-[50%] rounded-full relative right-[5%] cursor-pointer max-sm:right-0 max-sm:h-full max-sm:w-full max-sm:max-w-full max-sm:flex max-sm:items-center">
                 <div class="mode w-2/5 h-full bg-black rounded-full absolute scale-[.9] max-sm:h-[90%] transition-all duration-300 flex-box">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" id="moon" class="size-5 absolute text-one transition-all duration-300 flex dark:hidden">
@@ -70,7 +70,7 @@
             </svg>
             <img src="./src/assets/img/Logo.png" class="size-20 dark:brightness-0" alt="Logo" loading="lazy">
         </header>
-        <section class="w-full h-3/4">
+        <section class="w-full h-full">
             <nav class="w-full h-full flex-box-column max-sm:w-full p-5">
                 <ul class="group w-[90%] flex-box-column items-start gap-5 border-l-[1px] border-l-one p-5">
                     <li><a href="#home" class="links texts text-zero text-shadow-sm text-[1rem] relative before:content-[''] before:absolute before:bottom-0 before:left-[-7%] before:w-[115%] before:h-full before:transition-all before:duration-300 before:ease-custom-ease before:z-[-1] before:scale-y-[0] before:bg-zero hover:before:scale-y-[1] hover:text-black hover:font-medium ">INICIO</a></li>
@@ -83,11 +83,6 @@
         </section>
         <footer class="w-full h-1/6 flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px]">
             <h1 class="texts text-white text-xl font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
-            <div class="flex items-center justify-around">
-                <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-                <a href="https://www.linkedin.com/in/luiz-henrique-araujo-farias-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-                <a href="https://www.instagram.com/luizaraujo_farias/"><img src="./src/assets/img/icon-instagram.png" alt="" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0"></a>
-            </div>
         </footer>
     </aside>
     <!--CONTEUDO PRINCIPAL-->
@@ -111,11 +106,11 @@
             </div>
         </section>
         <!--SESSAO SOBRE-->
-        <section id="about" class="sections h-[100vh] bg-black max-sm:h-[90vh] max-sm:max-h-[90vh] max-sm:overflow-visible">
-            <div class="grid grid-cols-2 place-items-center absolute top-40 max-sm:grid-cols-1 max-sm:gap-10">
+        <section id="about" class="sections h-[100vh] bg-black max-sm:h-fit max-sm:max-h-fit max-sm:overflow-visible">
+            <div class="grid grid-cols-2 place-items-center absolute top-40 max-sm:grid-cols-1 max-sm:gap-10 max-sm:relative max-sm:h-fit">
 
                 <img src="./src/assets/img/Minha Foto Perfil.jpeg" class="borded w-2/4  grid-start-1 border-2 border-one border-solid p-1 rounded-full animate-float transition-all duration-300 dark:border-yellow-800 max-sm:p-0 max-sm:w-3/6 max-sm:absolute max-sm:top-[-230px] max-sm:z-50 max-sm:border-[6px] max-sm:border-black dark:max-sm:border-white max-sm:animate-none" loading="lazy">
-                <article class="grid-start-2 flex-box-column items-start w-[90%] gap-7 max-sm:items-center">
+                <article class="grid-start-2 flex-box-column items-start w-[90%] gap-7 max-sm:items-center max-sm:justify-start max-sm:h-[625px]">
                     
                     <div class="w-[55%]">
                         <h1 class="dark:text-yellow-800 h-[70px] text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl max-sm:h-[50px]">Conheça-me</h1>
@@ -137,7 +132,7 @@
 
         </section>
         <!--SESSAO DE SKILLS, PORTIFOLIO E SERVIÇOS-->
-        <section id="works" class="works sections h-[140vh] bg-black flex-box-column justify-start p-5 max-sm:h-[155vh] max-sm:max-h-[155vh] max-sm:justify-between">
+        <section id="works" class="works sections h-[140vh] bg-black flex-box-column justify-start p-5 max-sm:h-fit max-sm:max-h-fit max-sm:justify-between">
             <!--S DE CONTEUDOS-->
             <div class="w-full h-40 relative flex-box gap-5 p-3 max-sm:flex-box-column max-sm:justify-start  max-sm:p-0">
                 <div class="content-box flex-box-column group hover:animate-hoverfloat hover:rounded-[0px] max-sm:w-full z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:size-28">
@@ -160,7 +155,7 @@
             <section id="container-1" class="w-full h-screen relative bottom-[0%] flex-box transition-all duration-30 max-sm:h-[100vh] max-sm:max-h-[100vh] max-sm:items-end">
                 <div class="w-full h-[90vh] flex-box-column gap-12 p-[10px] max-sm:justify-start max-sm:h-fit max-sm:max-h-fit">
                     <!--SESSÃO DE ICONES-->
-                    <section class="w-full h-1/5 flex-box gap-5 dark:border-b-yellow-800 max-sm:border-none max-sm:w-full max-sm:flex-wrap max-sm:flex-row max-sm:gap-0 max-sm:h-auto">
+                    <section class="w-full h-1/5 flex-box gap-5 dark:border-b-yellow-800 max-sm:border-none max-sm:w-full  max-sm:flex-wrap max-sm:flex-row max-sm:gap-0">
                         <div class="cards animate-float animation-duration-1000 ">
                             <img src="./src/assets/img/icon-html-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
@@ -190,7 +185,7 @@
                         </div>
                     </section>
                     <!--SESSÃO DE INFORMAÇÕES-->
-                    <section class="w-full h-3/4 flex-box justify-evenly max-sm:h-[450px] max-sm:overflow-hidden max-sm:justify-start max-sm:flex-nowrap max-sm:gap-10 max-sm:overflow-x-scroll max-sm:scrollbar">
+                    <section class="w-full h-3/4 flex-box justify-evenly max-sm:h-[400px] max-sm:overflow-hidden max-sm:justify-start max-sm:flex-nowrap max-sm:gap-10 max-sm:overflow-x-scroll max-sm:scrollbar">
                         <div class="front-end w-[50%] h-full max-sm:w-full max-sm:min-w-full max-sm:flex-none">
                             <article class="w-full h-full flex-box-column justify-start gap-10 p-10 max-sm:p-0">
                                 <h1 class="texts text-zero dark:text-yellow-800 text-3xl font-light tracking-[3px]">FRONT-END</h1>
@@ -284,8 +279,8 @@
 
         </section>
         <!--SESSAO DE imagem-->
-        <section style="background-image: url('./src/assets/banner/pc.webp');" class="w-full relative flex-box h-[50vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-40 max-sm:h-[30vh]">
-            <img src="./src/assets/img/Logo.png" class="size-56 z-50" alt="Logo">
+        <section style="background-image: url('./src/assets/banner/pc.webp');" class="w-full relative flex-box h-[50vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-40 max-sm:h-[20vh]">
+            <img src="./src/assets/img/Logo.png" class="size-56 z-50 max-sm:size-44" alt="Logo">
         </section>
         <!--SESSAO DE CONTATO-->
         <section id="contact" class="sections h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1">
@@ -295,10 +290,10 @@
 
             <form action="https://formsubmit.co/luiz308araujofarias%40gmail.com" method="POST" class="w-[40%] h-[90%] flex-box-column gap-5 relative max-sm:w-full">
     
-                <input type="text" name="name" placeholder="Nome" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <input type="email" name="email" placeholder="Email" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <input type="tel" name="number" placeholder="Telefone" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-full h-[50%] text-white bg-transparent border-zero dark:border-yellow-800 rounded-[10px] border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full scrollbar" required></textarea>
+                <input type="text" name="name" placeholder="Nome" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800  border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
+                <input type="email" name="email" placeholder="Email" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800  border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
+                <input type="tel" name="number" placeholder="Telefone" class="texts w-full h-[7%] p-4 text-white bg-transparent border-zero dark:border-yellow-800  border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
+                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-full h-[50%] text-white bg-transparent border-zero dark:border-yellow-800  border-[1px] dark:placeholder:text-black placeholder:text-white placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full scrollbar" required></textarea>
                 <button type="submit" class="w-2/5 h-[6%] cursor-pointer border-zero dark:border-yellow-800 border-solid border-[1px] text-white bg-transparent text-[1.2rem] font-normal dark:text-black relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[5%] hover:text-black dark:hover:border-zero ">ENVIAR</button>
 
                 <input type="hidden" name="_subject" value="Novo Contato!!!">
