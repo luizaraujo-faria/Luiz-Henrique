@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset() // limpa os campos após envio
 
             setTimeout(() => {
-                window.location.href = '../thanks.html'
+                window.location.href = './thanks.html'
             },500)
         })
         .catch((error) => {
