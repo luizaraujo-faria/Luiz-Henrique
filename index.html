@@ -27,10 +27,10 @@
 </head>
 <body class="flex items-center justify-center flex-col scrollbar-body">
     <!--TELA DE CARREGAMENTO-->
-    <!--<div id="load-screen" class="w-full h-screen fixed top-0 z-[100] bg-black flex items-center justify-center transition-all duration-700">
+    <div id="load-screen" class="w-full h-screen fixed top-0 z-[100] bg-black flex items-center justify-center transition-all duration-700">
         <div id="load-bar" class="w-72 h-72 rounded-full animate-spin bg-black border-t-2 border-zero border-solid transition-all duration-500 max-sm:w-64 max-sm:h-64"></div>
-        <img src="./src/assets/img/Minha foto - perfil.webp" id="load-img" class="w-64 border-2 border-zero p-1 absolute rounded-full transition-all duration-500 brightness-75 max-sm:w-56">
-    </div>-->
+        <img src="./src/assets/img/Minha Foto Perfil.jpeg" alt="Minha-Foto" id="load-img" class="w-64 border-2 border-zero p-1 absolute rounded-full transition-all duration-500 brightness-75 max-sm:w-56">
+    </div>-
     <!--HEADER-->
     <header class="w-full h-14 bg-black fixed top-0 z-[80] flex transition-all duration-300 max-sm:flex-box  max-sm:p-5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" id="icon-menu" class="size-8 hidden text-zero dark:text-black cursor-pointer max-sm:flex max-sm:absolute max-sm:left-[5%]">
@@ -97,10 +97,10 @@
                 <div class="w-auto absolute bottom-[32%] flex items-center justify-center gap-5 max-sm:bottom-[28%] max-sm:gap-2">
                     <h3 class="text-4xl text-white font-afacad font-light relative before:content-[''] before:absolute before:bottom-0 before:left-2/4 before:w-1/4 before:h-px before:transition-all before:duration-300 before:ease-in-out cursor-pointer before:bg-zero hover:before:w-full hover:before:left-0 whitespace-nowrap tracking-[2px] max-sm:text-xl">Desenvolvedor <span class="text-one">Web</span></h3>
 
-                    <div class="flex items-center justify-around ">
-                        <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Icon-GitHub" class="w-12 h-12 cursor-pointer relative [animation-delay:1s] animate-float max-sm:w-7 max-sm:h-7"></a>
-                        <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Icon-LinkedIn" class="w-12 h-12 cursor-pointer relative [animation-delay:1.25s] animate-float max-sm:w-7 max-sm:h-7"></a>
-                        <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Icon-Instagram" class="w-12 h-12 cursor-pointer relative [animation-delay:1.5s] animate-float max-sm:w-7 max-sm:h-7"></a>
+                    <div class="flex items-center justify-around gap-[2px]">
+                        <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Icon-GitHub" class="w-12 h-12 cursor-pointer relative [animation-delay:1s] animate-float transition-all duration-300 hover:translate-y-2 max-sm:w-7 max-sm:h-7"></a>
+                        <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Icon-LinkedIn" class="w-12 h-12 cursor-pointer relative [animation-delay:1.25s] animate-float transition-all duration-300 hover:translate-y-2 max-sm:w-7 max-sm:h-7"></a>
+                        <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Icon-Instagram" class="w-12 h-12 cursor-pointer relative [animation-delay:1.5s] animate-float transition-all duration-300 hover:translate-y-2 max-sm:w-7 max-sm:h-7"></a>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
         <section id="about" class="sections h-[100vh] bg-black max-sm:h-fit max-sm:max-h-fit max-sm:overflow-visible">
             <div class="grid grid-cols-2 place-items-center absolute top-40 max-sm:grid-cols-1 max-sm:gap-10 max-sm:relative max-sm:h-fit">
 
-                <img src="./src/assets/img/Minha Foto Perfil.jpeg" class="borded w-2/4  grid-start-1 border-2 border-one border-solid p-1 rounded-full animate-float transition-all duration-300 dark:border-yellow-800 max-sm:p-0 max-sm:w-3/6 max-sm:absolute max-sm:top-[-230px] max-sm:z-50 max-sm:border-[6px] max-sm:border-black dark:max-sm:border-white max-sm:animate-none" loading="lazy">
+                <img src="./src/assets/img/Minha Foto Perfil.jpeg" alt="Minha-Foto" class="borded w-2/4  grid-start-1 border-2 border-one border-solid p-1 rounded-full animate-float transition-all duration-300 dark:border-yellow-800 max-sm:p-0 max-sm:w-3/6 max-sm:absolute max-sm:top-[-230px] max-sm:z-50 max-sm:border-[6px] max-sm:border-black dark:max-sm:border-white max-sm:animate-none" loading="lazy">
                 <article class="grid-start-2 flex-box-column items-start w-[90%] gap-7 max-sm:items-center max-sm:justify-start max-sm:h-[625px]">
                     
                     <div class="w-[55%]">
@@ -268,7 +268,7 @@
 
         </section>
         <!--SESSAO DE imagem-->
-        <section style="background-image: url('./src/assets/banner/pc.webp');" class="w-full relative flex-box h-[50vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-40 max-sm:h-[20vh]">
+        <section style="background-image: url('./src/assets/banner/pc.webp');" class="w-full relative flex-box h-[40vh] bg-fixed bg-cover bg-no-repeat bg-bottom before:content-[''] before:absolute before:w-full before:h-full before:left-0 before:top-0 before:backdrop-contrast-[100%] before:backdrop-brightness-[40%] before:z-40 max-sm:h-[20vh]">
             <img src="./src/assets/img/Logo.png" class="size-56 z-50 max-sm:size-44" alt="Logo">
         </section>
         <!--SESSAO DE CONTATO-->
@@ -277,39 +277,41 @@
                 <h1 class="dark:text-yellow-800 text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl">Contate-me</h1>
             </div>
 
-            <form action="https://formsubmit.co/luiz308araujofarias%40gmail.com" method="POST" class="w-[40%] h-[90%] flex-box-column gap-5 bg-zero relative max-sm:w-full">
+            <form action="" method="" id="formulario" class="w-[40%] h-[90%] flex-box-column gap-5 bg-zero relative max-sm:w-full">
     
-                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full" required>
-                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-black bg-transparent border-b-black  border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-full scrollbar" required></textarea>
-                <button type="submit" class="w-[90%] h-[7%] cursor-pointer border-black border-solid border-[2px] text-black bg-transparent text-[1.2rem] font-normal relative z-[2] before:content-[''] before:absolute before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[5%] hover:text-zero">ENVIAR</button>
-
-                <input type="hidden" name="_subject" value="Novo Contato!!!">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://luizaraujo-faria.github.io/Luiz-Henrique/thanks.html">
-
-                <div class="flex-box-column items-end justify-start w-4/5">
-                    <div class="flex-box gap-2">
-                        <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-black text-xl font-light cursor-pointer max-sm:text-xl">+55 (11) 99007-6535</h1></a>
-                        <img src="./src/assets/img/icon-whatsapp-preto.png" alt="Icon-Whatsapp" class="w-7 cursor-pointer max-sm:w-8 dark:brightness-0">
-                    </div>
-                </div>
+                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-black bg-transparent border-b-black  border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%] scrollbar" required></textarea>
+                <button type="submit" id="form-button" class="group w-[90%] h-[7%] flex-box cursor-pointer border-black border-solid border-[2px] text-black bg-transparent text-[1.2rem] relative z-[2] before:content-[''] before:absolute before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[6%] hover:text-zero">
+                    <span class="font-normal">ENVIAR</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="button-load" class="size-10 text-black absolute animate-spin hidden group-hover:text-zero">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                    </svg>                      
+                </button>
             </form>
+
+            <div class="flex-box-column items-end justify-start w-2/5 max-sm:w-fit">
+                <div class="flex-box gap-2">
+                    <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-zero text-xl font-light cursor-pointer max-sm:text-xl">+55 (11) 99007-6535</h1></a>
+                    <img src="./src/assets/img/icon-whatsapp-cor.png" alt="Icon-Whatsapp" class="w-7 cursor-pointer max-sm:w-8 dark:brightness-0">
+                </div>
+            </div>
 
         </section>
     </main>
     <footer class="sections h-36 bg-black flex-box-column gap-1 border-b-one border-b-[15px] border-t-one border-t-[1px] max-sm:h-32">
-        <h1 class="texts text-white text-[1.2rem] font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
-        <div class="flex items-center justify-around">
-            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
-            <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
-            <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Rede Social" class="size-7 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+        <h1 class="texts text-white text-[1rem] font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span> - Todos Os<span class="text-zero dark:text-yellow-800"> Direitos</span> Reservados.</h1>
+        <h2 class="texts text-white text-[.9rem] font-thin max-sm:text-[1rem] border-t-[1px] border-t-zero">Por <span class="text-zero dark:text-yellow-800">Luiz</span> H. <span class="text-zero dark:text-yellow-800">A</span>raujo</h2>
+        <div class="flex items-center justify-center gap-[1px]">
+            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
         </div>
     </footer>
 </body>
 <script src="./src/js/index.js"></script>
 <script src="./src/js/theme.js"></script>
-<script src="./src/js/contact.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./src/js/email.js"></script>
 </html>

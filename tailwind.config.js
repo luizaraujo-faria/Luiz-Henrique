@@ -38,7 +38,7 @@ export default {
         'w-zero': '0', 
       },
       animation: {
-        'spin': 'spinbar 1s linear infinite',
+        'spin': 'spinbar .7s linear infinite',
         'float': 'floating 1s infinite alternate',
         'hoverfloat': 'hfloat .5s infinite alternate',
         'words': 'words 20s steps(10) infinite',

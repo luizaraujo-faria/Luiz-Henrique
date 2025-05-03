@@ -23,6 +23,7 @@ window.onload = function() {
     
     //TEMPO LIMITE//
     setTimeout(() =>{
+        loadScreen.classList.remove('w-full')
         loadScreen.classList.add('w-0')
         
         body.classList.remove('overflow-hidden')
@@ -123,5 +124,12 @@ const mediaQuery = window.matchMedia("(width < 640px)");{
     closeIcon.addEventListener('click', () => {
         menuBar.classList.remove('translate-x-[0%]')
         body.classList.remove('overflow-y-hidden')
+    })
+
+    document.querySelectorAll('.links').forEach((link) => {
+        link.addEventListener('click', () => {
+            menuBar.classList.remove('translate-x-[0%]')
+            body.classList.remove('overflow-y-hidden')
+        })
     })
 }
