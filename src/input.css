@@ -2,31 +2,38 @@
 @config "../tailwind.config.js";
 
 @layer utilities {
-    .animation-duration-1000 {
-        animation-duration: 1s;
-    }
-    .animation-duration-1250 {
-        animation-duration: 1.25s;
-    }
-    .animation-duration-1500 {
-        animation-duration: 1.5s;
-    }
-    .animation-duration-1750 {
-        animation-duration: 1.75s;
-    }
-    .animation-duration-2000 {
-        animation-duration: 2s;
-    }
-    .animation-duration-2250 {
-        animation-duration: 1.25s;
-    }
-    .animation-duration-2500 {
-        animation-duration: 2.5s;
-    }
     .active{
         color: #000;
     }
     .active::before{
+        content: "";
         transform: scale(1);
+    }
+    .animation-delay-100{
+        animation-delay: 1s;
+    }
+    .animation-delay-200{
+        animation-delay: 2s;
+    }
+    .animation-delay-300{
+        animation-delay: 3s;
+    }
+    .animation-delay-400{
+        animation-delay: 4s;
+    }
+    .animation-delay-500{
+        animation-delay: 5s;
+    }
+    .animation-delay-600{
+        animation-delay: 6s;
+    }
+    .animation-delay-700{
+        animation-delay: 7s;
+    }
+    .animation-delay-800{
+        animation-delay: 8s;
+    }
+    .animation-delay-900{
+        animation-delay: 9s;
     }
 }

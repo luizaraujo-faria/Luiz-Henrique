@@ -2,7 +2,7 @@
 
 const plugin = require('tailwindcss/plugin');
 
-module.exports = {
+export default {
   important: true,
   mode: 'jit',
   content: ["./**/*.html", "./src/**/*.{html,js,jsx}"],
@@ -72,6 +72,17 @@ module.exports = {
         textShadow: {
           sm: '1px 3px 3px #000'
         },
+    },
+    animationDelay: {
+      100: '1s',
+      200: '2s',
+      300: '3s',
+      400: '4s',
+      500: '5s',
+      600: '6s',
+      700: '7s',
+      800: '8s',
+      900: '9s',
     },
     transitionTimingFunction: {
       'custom-ease': 'cubic-bezier(0.5, 1.6, 0.4, 0.7)',
