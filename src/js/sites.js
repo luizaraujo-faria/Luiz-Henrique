@@ -15,11 +15,15 @@ async function loadSiteImage(){
 loadSiteImage()
 
 const infoSites = document.getElementById('info-site')
+const overlay = document.getElementById('overlay')
+const body = document.getElementById('body')
 
 document.querySelectorAll('.site').forEach((element, index) => {
 
     element.addEventListener('click', async () => {
         infoSites.classList.remove('hidden')
+        body.classList.add('overflow-hidden')
+        overlay.classList.toggle('z-[100]')
         await setInfo(index)
     })
 })
@@ -28,6 +32,8 @@ const infoClose = document.getElementById('info-close')
 
 infoClose.addEventListener('click', () => {
     infoSites.classList.add('hidden')
+    body.classList.remove('overflow-hidden')
+    overlay.classList.remove('z-[100]')
 })
 
 async function setInfo(index){

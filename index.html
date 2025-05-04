@@ -25,7 +25,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center flex-col scrollbar-body">
+<body id="body" class="flex items-center justify-center flex-col scrollbar-body overflow-hidden">
+    <!--OVERLAY-->
+    <section id="overlay" class="w-full h-screen fixed top-0 z-[-100] bg-[#ffffff1a] dark:bg-[#0000006e]"></section>
     <!--TELA DE CARREGAMENTO-->
     <div id="load-screen" class="w-full h-screen fixed top-0 z-[100] bg-black flex items-center justify-center transition-all duration-700">
         <div id="load-bar" class="w-72 h-72 rounded-full animate-spin bg-black border-t-2 border-zero border-solid transition-all duration-500 max-sm:w-64 max-sm:h-64"></div>
@@ -85,6 +87,31 @@
             <h1 class="texts text-white text-xl font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span>-TodosOs<span class="text-zero dark:text-yellow-800">Direitos</span>Reservados.</h1>
         </footer>
     </aside>
+    <!--SESSAO DE SITES-->
+    <section id="info-site" class="w-full h-screen flex-box fixed top-0 z-[105] bg-transparent hidden">
+        <div class="w-3/4 h-3/4 relative flex-box flex-col bg-black dark:bg-white max-sm:w-[95%] max-sm:h-fit">
+            <header class="w-full h-8 flex-box justify-end bg-zero p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="info-close" class="size-6 cursor-pointer text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>                          
+            </header>
+            <main class="w-full h-full flex-box flex-col items-start p-5 gap-5 max-sm:justify-start">
+                <div class="w-full h-3/5 flex-box gap-5 max-sm:flex-col">
+                    <img id="src" src="" class="site-image w-3/5 h-full object-contain max-sm:w-full max-sm:object-cover" alt="Site-Image">
+                    <div class="w-2/5 h-full flex items-start justify-start gap-10 flex-col max-sm:w-full max-sm:items-center">
+                        <div class="flex-box flex-col">
+                            <h2  class="dark:text-yellow-800 text-zero text-2xl font-light">Nome: <span id="name" class="name text-white texts"></span></h2>
+                            <h3  class="dark:text-yellow-800 text-zero text-xl font-light">Ramo: <span id="theme" class="theme text-white texts"></span></h3>
+                        </div>
+                        <a href="" id="link" target="_blank" class="w-full h-10"><button type="submit" id="form-button" class="text-black text-xl w-full h-full cursor-pointer bg-one flex-box justify-evenly relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-10">VISITAR</button></a>
+                    </div>
+                </div>
+                <article class="w-full h-2/5 flex-box flex-col gap-2 p-5 items-start justify-start max-sm:hidden">
+                    <p  class="dark:text-yellow-800 text-zero text-[1.1rem] font-light text-justify w-[95%]">Sobre: <span id="desc" class="desc text-white texts text-justify"></span></p>
+                </article>
+            </main>
+        </div>
+    </section>
     <!--CONTEUDO PRINCIPAL-->
     <main class="w-full overflow-hidden">
         <!--SESSAO DE INTRODUÇÃO-->
@@ -133,7 +160,7 @@
         </section>
         <!--SESSAO DE SKILLS, PORTIFOLIO E SERVIÇOS-->
         <section id="works" class="works sections h-[140vh] bg-black flex-box-column justify-start p-5 max-sm:h-fit max-sm:max-h-fit max-sm:justify-between">
-            <!--S DE CONTEUDOS-->
+            <!--SESSAO DE CONTEUDOS-->
             <div class="w-full h-40 relative flex-box gap-5 p-3 max-sm:flex-box-column max-sm:justify-start  max-sm:p-0">
                 <div class="content-box flex-box-column group hover:animate-hoverfloat hover:rounded-[0px] max-sm:w-full z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-500 before:ease-custom-ease hover:before:scale-y-[1] max-sm:size-28">
                     <h1 class="text-zero text-3xl font-thin group-hover:text-black texts">Habilidades</h1>
@@ -157,13 +184,13 @@
                     <!--SESSÃO DE ICONES-->
                     <section class="w-full h-1/5 flex-box gap-5 dark:border-b-yellow-800 max-sm:border-none max-sm:w-full  max-sm:flex-wrap max-sm:flex-row max-sm:gap-0">
                         <div class="cards animate-float [animation-delay:1s] ">
-                            <img src="./src/assets/img/icon-html-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-js-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-14" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float [animation-delay:1.25s] ">
-                            <img src="./src/assets/img/icon-css-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-html-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float [animation-delay:1.5s] ">
-                            <img src="./src/assets/img/icon-js-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-css-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-14" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float [animation-delay:1.75s] ">
                             <img src="./src/assets/img/icon-tailwind-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
@@ -181,7 +208,7 @@
                             <img src="./src/assets/img/icon-csharp-cor.png" class="size-14 dark:brightness-0 object-cover max-sm:size-12" alt="ICONE-SKILL" loading="lazy">
                         </div>
                         <div class="cards animate-float [animation-delay:3s] ">
-                            <img src="./src/assets/img/icon-node-cor.png" class="size-16 dark:brightness-0 object-cover max-sm:size-12 p-1" alt="ICONE-SKILL" loading="lazy">
+                            <img src="./src/assets/img/icon-node-cor.png" class="size-18 dark:brightness-0 object-cover max-sm:size-14 p-1" alt="ICONE-SKILL" loading="lazy">
                         </div>
                     </section>
                     <!--SESSÃO DE INFORMAÇÕES-->
@@ -191,7 +218,7 @@
                                 <h1 class="texts text-zero dark:text-yellow-800 text-3xl font-light tracking-[3px]">FRONT-END</h1>
                                 <p class="texts text-white text-justify"> <span class="text-zero dark:text-yellow-800">HTML & CSS</span> – Desenvolvimento de interfaces <span class="text-zero dark:text-yellow-800">intuitivas, responsivas</span> e <span class="text-zero dark:text-yellow-800">acessíveis</span>, com uso eficiente de tags <span class="text-zero dark:text-yellow-800">semânticas</span> para melhor SEO.<br><br> 
                                     <span class="text-zero dark:text-yellow-800">TailwindCSS</span> - Estilização <span class="text-zero dark:text-yellow-800">ágil</span> e otimizada para layouts <span class="text-zero dark:text-yellow-800">modernos</span> e <span class="text-zero dark:text-yellow-800">eficientes.</span><br><br> 
-                                <span class="text-zero dark:text-yellow-800">JavaScript & React.js</span> - Lógica de programação, Manipulação do <span class="text-zero dark:text-yellow-800">DOM</span>, interatividade dinâmica e ES6+. <span class="text-zero dark:text-yellow-800">Aprendendo</span> React, conceito de componentes, estados e <span class="text-zero dark:text-yellow-800">SPA</span>. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span></p>
+                                <span class="text-zero dark:text-yellow-800">JavaScript & React.js</span> - Lógica de programação, Manipulação do <span class="text-zero dark:text-yellow-800">DOM</span>, Programação Orientada a Objetos e ES6+. <span class="text-zero dark:text-yellow-800">Aprendendo</span> React, conceito de componentes, estados e <span class="text-zero dark:text-yellow-800">SPA</span>. <span class="text-zero dark:text-yellow-800">(Aprimorando)</span></p>
                             </article>
                         </div>
                         <hr class="w-px h-1/4 bg-white dark:bg-yellow-800 opacity-50 max-sm:hidden">
@@ -199,8 +226,8 @@
                             <article class="w-full h-full flex-box-column justify-start gap-10 p-10 max-sm:p-0">
                                 <h1 class="texts text-zero dark:text-yellow-800 text-3xl font-light tracking-[3px]">BACK-END</h1>
                                 <p class="texts text-white text-justify"> <span class="text-zero dark:text-yellow-800">SQL/MySQL</span> - Modelagem e <span class="text-zero dark:text-yellow-800">implementação</span> de bancos de dados, com base sólida em sublinguagens <span class="text-zero dark:text-yellow-800">DDL, DML</span> e <span class="text-zero dark:text-yellow-800">DQL</span> .<br><br>
-                                    <span class="text-zero dark:text-yellow-800">C#</span> - Lógica de <span class="text-zero dark:text-yellow-800">programação</span> e desenvolvimento backend básico. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span><br><br>
-                            <span class="text-zero dark:text-yellow-800">Node.js</span> - Desenvolvimento <span class="text-zero dark:text-yellow-800">inicial</span> de APIs com Express, incluindo autenticação e CRUD. <span class="text-zero dark:text-yellow-800">(Em aprendizado)</span></p>
+                                    <span class="text-zero dark:text-yellow-800">C#</span> - Lógica de <span class="text-zero dark:text-yellow-800">programação</span>, Programação Orientada a Objetos e .NET (<span class="text-zero dark:text-yellow-800">Aprendendo ASP.NET</span>).<br><br>
+                            <span class="text-zero dark:text-yellow-800">Node.js</span> - Desenvolvimento <span class="text-zero dark:text-yellow-800">inicial</span> de APIs com Express, incluindo CRUD e pequena base em autenticação com JWT. <span class="text-zero dark:text-yellow-800">(Aprimorando)</span></p>
                             </article>
                         </div>
                     </section>
@@ -212,7 +239,7 @@
             </section>
             <!--SESSAO DE SERVIÇOS-->
             <section id="container-3" class="w-full h-3/4 grid grid-cols-2 place-items-center absolute bottom-12 faded transition-all duration-300 max-sm:grid-cols-1 max-sm:mt-[-20%] max-sm:h-[60%] max-sm:bottom-0">
-                <div class=" absolute top-[5%] max-sm:left-[30%]">
+                <div class="absolute top-[5%]  max-sm:top-0">
                     <h1 class="dark:text-yellow-800 h-[70px] text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[wordstwo_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl max-sm:h-[50px]">Serviços</h1>
                 </div>
                 <ul class="flex-box-column grid-start-1 items-start gap-3 max-sm:items-center">
@@ -228,27 +255,6 @@
                         <img src="./src/assets/banner/JL-DonutsHouse.webp" class="site w-4/5 object-cover cursor-pointer" alt="Imagem-Serviço">
                     </div>
                 </div>
-
-                <div id="info-site" class="project-layout w-3/4 h-3/4 hidden bg-black absolute z-10">
-                    <header class="w-full h-10 flex-box justify-end bg-zero p-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="info-close" class="size-8 cursor-pointer text-black">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>                          
-                    </header>
-                    <main class="w-full h-full flex-box flex-col items-start p-5 gap-5">
-                        <div class="w-full h-3/5 flex-box gap-5">
-                            <img id="src" src="" class="site-image w-3/5 h-full object-cover" alt="Site-Image">
-                            <a href="" id="link" target="_blank" class="w-2/5 h-10"><button type="submit" id="form-button" class="group w-[90%] h-full flex-box cursor-pointer border-zero border-solid border-[2px] text-zero bg-transparent text-[1.5rem] relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[7%] hover:text-black">VISITAR</button></a>
-                        </div>
-                        <article class="w-full h-2/5 flex-box flex-col gap-3 items-start justify-start">
-                            <div>
-                                <h2  class="dark:text-yellow-800 text-zero text-2xl font-light">Nome: <span id="name" class="name text-white texts"></span></h2>
-                                <h3  class="dark:text-yellow-800 text-zero text-xl font-light">Tema: <span id="theme" class="theme text-white texts"></span></h3>
-                            </div>
-                            <p  class="dark:text-yellow-800 text-zero text-[1rem] font-light text-justify w-[95%]">Descrição: <span id="desc" class="desc text-white texts text-justify"></span></p>
-                        </article>
-                    </main>
-                </div>
             </section>
 
         </section>
@@ -257,20 +263,20 @@
             <img src="./src/assets/img/Logo.png" class="size-56 z-50 max-sm:size-44" alt="Logo">
         </section>
         <!--SESSAO DE CONTATO-->
-        <section id="contact" class="sections h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1 max-sm:gap-10">
+        <section id="contact" class="sections h-[120vh] flex-box-column gap-10 p-5 bg-black max-sm:grid-cols-1 max-sm:gap-10">
             <div class="w-[24]">
                 <h1 class="dark:text-yellow-800 text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl">Contate-me</h1>
             </div>
 
-            <form action="" method="" id="formulario" class="w-[40%] h-[85%] flex-box-column gap-5 bg-zero relative max-sm:w-full max-sm:h-[70%]">
+            <form action="" method="" id="formulario" class="w-[40%] h-[80%] flex-box-column justify-between gap-5 bg-transparent border-l-[1px] border-r-[1px] border-l-zero border-r-zero relative max-sm:w-full max-sm:h-[70%]">
     
-                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-black bg-transparent border-b-black  border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%] scrollbar" required></textarea>
-                <button type="submit" id="form-button" class="group w-[90%] h-[7%] flex-box cursor-pointer border-black border-solid border-[2px] text-black bg-transparent text-[1.2rem] relative z-[2] before:content-[''] before:absolute before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[7%] hover:text-zero">
+                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-zero dark:text-black bg-transparent border-b-zero dark:border-b-black border-b-[2px] placeholder:text-zero dark:placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-zero dark:text-black bg-transparent border-b-zero dark:border-b-black border-b-[2px] placeholder:text-zero dark:placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-zero dark:text-black bg-transparent border-b-zero dark:border-b-black border-b-[2px] placeholder:text-zero dark:placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-zero dark:text-black bg-transparent border-b-zero dark:border-b-black  border-b-[2px] placeholder:text-zero dark:placeholder:text-black  placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%] scrollbar" required></textarea>
+                <button type="submit" id="form-button" class="group w-[90%] h-[7%] flex-box cursor-pointer border-zero dark:border-black border-solid border-[2px] text-zero dark:text-black bg-transparent text-[1.2rem] relative z-[2] before:content-[''] before:absolute before:bg-zero dark:before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[7%] hover:text-black dark:hover:text-zero">
                     <span class="font-normal">ENVIAR</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="button-load" class="size-10 text-black absolute animate-spin hidden group-hover:text-zero">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="button-load" class="size-8 text-zero dark:text-black absolute animate-spin hidden group-hover:text-black dark:group-hover:text-zero">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>                      
                 </button>
@@ -278,7 +284,7 @@
 
             <div class="flex-box-column items-end justify-start w-2/5 max-sm:w-fit">
                 <div class="flex-box gap-2">
-                    <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-zero text-xl font-light cursor-pointer max-sm:text-xl">+55 (11) 99007-6535</h1></a>
+                    <a href="https://wa.me/5511990076535" target="blank"><h1 class="texts text-white text-xl font-light cursor-pointer max-sm:text-xl">+55 (11) 99007-6535</h1></a>
                     <img src="./src/assets/img/icon-whatsapp-cor.png" alt="Icon-Whatsapp" class="w-7 cursor-pointer max-sm:w-8 dark:brightness-0">
                 </div>
             </div>
@@ -299,5 +305,5 @@
 <script src="./src/js/theme.js"></script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="./src/js/email.js"></script>
-<script src="./src/js/services.js"></script>
+<script src="./src/js/sites.js"></script>
 </html>

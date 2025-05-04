@@ -17,7 +17,6 @@ function applyLightMode(isLightMode){
         slideArticle.forEach(slideArticle => { slideArticle.classList.remove('dark:bg-whitefade') })
         texts.forEach(text => { text.classList.add('dark:text-black') })
         section.forEach(section => { section.classList.add('dark:bg-white') })
-        infoSite.classList.add('bg-white')
     }
     else{
         html.classList.remove('dark')
@@ -26,7 +25,6 @@ function applyLightMode(isLightMode){
         slideArticle.forEach(slideArticle => { slideArticle.classList.add('dark:bg-whitefade') })
         texts.forEach(text => { text.classList.remove('dark:text-black') })
         section.forEach(section => { section.classList.remove('dark:bg-white') })
-        infoSite.classList.remove('bg-white')
     }
 }
 
@@ -45,5 +43,4 @@ modeBar.addEventListener('click', () => {
     texts.forEach(text => { text.classList.toggle('dark:text-black') })
     slideArticle.forEach(slideArticle => { slideArticle.classList.toggle('dark:bg-whitefade') })
     section.forEach(section => { section.classList.toggle('dark:bg-white') })
-    infoSite.classList.toggle('bg-white')
 })
