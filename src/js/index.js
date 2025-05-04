@@ -57,31 +57,31 @@ clickDivs.forEach(div => {
     })
 })
 
-//SLIDESHOW PROJETOS//
-const slides = document.querySelector('.slides')
-const prevButton = document.querySelector('.prev')
-const nextButton = document.querySelector('.next')
-let currentIndex = 0//VARIAVEL CONTADOR//
-const totalSlides = document.querySelectorAll('.slide').length
+//SLIDESHOW//
+// const slides = document.querySelector('.slides')
+// const prevButton = document.querySelector('.prev')
+// const nextButton = document.querySelector('.next')
+// let currentIndex = 0//VARIAVEL CONTADOR//
+// const totalSlides = document.querySelectorAll('.slide').length
 
-function showSlide(index) {
-    const slideWidth = document.querySelector('.slide').clientWidth
-    slides.style.transform = `translateX(-${index * slideWidth}px)`
-}
+// function showSlide(index) {
+//     const slideWidth = document.querySelector('.slide').clientWidth
+//     slides.style.transform = `translateX(-${index * slideWidth}px)`
+// }
 
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides
-    showSlide(currentIndex)
-})
+// nextButton.addEventListener('click', () => {
+//     currentIndex = (currentIndex + 1) % totalSlides
+//     showSlide(currentIndex)
+// })
 
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
-    showSlide(currentIndex)
-})
+// prevButton.addEventListener('click', () => {
+//     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides
+//     showSlide(currentIndex)
+// })
 
-setInterval(() => {
-    nextButton.click()
-},5000)
+// setInterval(() => {
+//     nextButton.click()
+// },5000)
 
 //EFEITO LINKS DE NAVEGAÇÃO//
 document.addEventListener('scroll', () => {
@@ -117,19 +117,20 @@ const mediaQuery = window.matchMedia("(width < 640px)");{
     const menuBar = document.getElementById('menu-bar')
     const body = document.querySelector('body')
 
+    document.querySelectorAll('.links').forEach(links => {
+        links.addEventListener('click', () => {
+            menuBar.classList.remove('translate-x-[0%]')
+            body.classList.remove('overflow-y-hidden')
+        })
+    })
+
     menuIcon.addEventListener('click', () => {
         menuBar.classList.add('translate-x-[0%]')
         body.classList.add('overflow-y-hidden')
     })
+
     closeIcon.addEventListener('click', () => {
         menuBar.classList.remove('translate-x-[0%]')
         body.classList.remove('overflow-y-hidden')
-    })
-
-    document.querySelectorAll('.links').forEach((link) => {
-        link.addEventListener('click', () => {
-            menuBar.classList.remove('translate-x-[0%]')
-            body.classList.remove('overflow-y-hidden')
-        })
     })
 }

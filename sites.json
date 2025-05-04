@@ -1,0 +1,9 @@
+[
+    {
+        "name": "JL-DonutsHouse",
+        "theme": "Doceria",
+        "desc": "JL Donuts House é um site moderno e atrativo que apresenta os donuts artesanais da marca de forma deliciosa e prática. Com um design encantador e navegação fácil, oferece uma ótima experiência para quem quer conhecer os sabores e fazer pedidos online com rapidez.",
+        "src": "./src/assets/banner/JL-DonutsHouse.webp",
+        "link": "https://jl-donutshouse.netlify.app/"
+    }
+]

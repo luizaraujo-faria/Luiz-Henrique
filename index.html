@@ -216,12 +216,39 @@
                     <h1 class="dark:text-yellow-800 h-[70px] text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[wordstwo_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl max-sm:h-[50px]">Serviços</h1>
                 </div>
                 <ul class="flex-box-column grid-start-1 items-start gap-3 max-sm:items-center">
-                    <li class="texts text-white text-4xl font-normal max-sm:text-2xl">Desenvolvimento <span class="text-one dark:text-yellow-800">de Sites</span></li>
+                    <li class="texts text-white text-4xl font-light max-sm:text-2xl">Desenvolvimento <span class="text-one dark:text-yellow-800">de Sites</span></li>
                     <li class="texts text-white text-3xl font-light max-sm:text-2xl"><span class="text-zero dark:text-yellow-800">Portifólio</span> Profissional</li>
                     <li class="texts text-white text-3xl font-light max-sm:text-2xl">Site <span class="text-zero dark:text-yellow-800">Comercial</span></li>
                     <li class="texts text-white text-3xl font-light max-sm:text-2xl"><span class="text-zero dark:text-yellow-800">Landing</span> Pages</li>
                 </ul>
-                <h2 class="texts text-4xl font-normal text-white grid-start-2 max-sm:text-2xl">Sem Serviços <span class="text-zero dark:text-yellow-800">Prestados.</span></h2>
+                
+                <div class="flex-box flex-col">
+                    <h2 class="texts text-white text-4xl font-light max-sm:text-2xl">Serviços <span class="text-one dark:text-yellow-800">prestados</span></h2>
+                    <div class="w-3/4 h-fit flex-box p-5 relative">
+                        <img src="./src/assets/banner/JL-DonutsHouse.webp" class="site w-4/5 object-cover cursor-pointer" alt="Imagem-Serviço">
+                    </div>
+                </div>
+
+                <div id="info-site" class="project-layout w-3/4 h-3/4 hidden bg-black absolute z-10">
+                    <header class="w-full h-10 flex-box justify-end bg-zero p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="info-close" class="size-8 cursor-pointer text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>                          
+                    </header>
+                    <main class="w-full h-full flex-box flex-col items-start p-5 gap-5">
+                        <div class="w-full h-3/5 flex-box gap-5">
+                            <img id="src" src="" class="site-image w-3/5 h-full object-cover" alt="Site-Image">
+                            <a href="" id="link" target="_blank" class="w-2/5 h-10"><button type="submit" id="form-button" class="group w-[90%] h-full flex-box cursor-pointer border-zero border-solid border-[2px] text-zero bg-transparent text-[1.5rem] relative z-[2] before:content-[''] before:absolute before:bg-zero before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[7%] hover:text-black">VISITAR</button></a>
+                        </div>
+                        <article class="w-full h-2/5 flex-box flex-col gap-3 items-start justify-start">
+                            <div>
+                                <h2  class="dark:text-yellow-800 text-zero text-2xl font-light">Nome: <span id="name" class="name text-white texts"></span></h2>
+                                <h3  class="dark:text-yellow-800 text-zero text-xl font-light">Tema: <span id="theme" class="theme text-white texts"></span></h3>
+                            </div>
+                            <p  class="dark:text-yellow-800 text-zero text-[1rem] font-light text-justify w-[95%]">Descrição: <span id="desc" class="desc text-white texts text-justify"></span></p>
+                        </article>
+                    </main>
+                </div>
             </section>
 
         </section>
@@ -230,18 +257,18 @@
             <img src="./src/assets/img/Logo.png" class="size-56 z-50 max-sm:size-44" alt="Logo">
         </section>
         <!--SESSAO DE CONTATO-->
-        <section id="contact" class="sections h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1">
+        <section id="contact" class="sections h-[120vh] flex-box-column gap-5 p-5 bg-black max-sm:grid-cols-1 max-sm:gap-10">
             <div class="w-[24]">
                 <h1 class="dark:text-yellow-800 text-one text-6xl font-thin whitespace-nowrap overflow-hidden border-r-2 border-r-one animate-[words_25s_infinite_steps(10),bar_.5s_infinite] max-sm:text-4xl">Contate-me</h1>
             </div>
 
-            <form action="" method="" id="formulario" class="w-[40%] h-[90%] flex-box-column gap-5 bg-zero relative max-sm:w-full">
+            <form action="" method="" id="formulario" class="w-[40%] h-[85%] flex-box-column gap-5 bg-zero relative max-sm:w-full max-sm:h-[70%]">
     
-                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
-                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-black bg-transparent border-b-black  border-b-[2px] placeholder:text-black placeholder:font-normal placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%] scrollbar" required></textarea>
-                <button type="submit" id="form-button" class="group w-[90%] h-[7%] flex-box cursor-pointer border-black border-solid border-[2px] text-black bg-transparent text-[1.2rem] relative z-[2] before:content-[''] before:absolute before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[6%] hover:text-zero">
+                <input type="text" name="name" placeholder="Nome" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="email" name="email" placeholder="Email" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <input type="tel" name="number" placeholder="Telefone" class="texts w-[90%] h-[7%] p-4 text-black bg-transparent border-b-black border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%]" required>
+                <textarea name="message" id="" placeholder="Mensagem" class="texts resize-none  p-5 w-[90%] h-[50%] text-black bg-transparent border-b-black  border-b-[2px] placeholder:text-black placeholder:font-light placeholder:text-[1.2rem] focus:outline-none max-sm:w-[90%] scrollbar" required></textarea>
+                <button type="submit" id="form-button" class="group w-[90%] h-[7%] flex-box cursor-pointer border-black border-solid border-[2px] text-black bg-transparent text-[1.2rem] relative z-[2] before:content-[''] before:absolute before:bg-black before:top-0 before:left-0 before:scale-y-0 before:z-[-1] before:h-full before:w-full before:transition-transform before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] max-sm:h-[7%] hover:text-zero">
                     <span class="font-normal">ENVIAR</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="button-load" class="size-10 text-black absolute animate-spin hidden group-hover:text-zero">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -262,9 +289,9 @@
         <h1 class="texts text-white text-[1rem] font-thin max-sm:text-[1rem]"><span class="text-zero dark:text-yellow-800">©2025</span> - Todos Os<span class="text-zero dark:text-yellow-800"> Direitos</span> Reservados.</h1>
         <h2 class="texts text-white text-[.9rem] font-thin max-sm:text-[1rem] border-t-[1px] border-t-zero">Por <span class="text-zero dark:text-yellow-800">Luiz</span> H. <span class="text-zero dark:text-yellow-800">A</span>raujo</h2>
         <div class="flex items-center justify-center gap-[1px]">
-            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
-            <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
-            <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Rede Social" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://github.com/luizaraujo-faria"><img src="./src/assets/img/icon-git hub.png" alt="Icon-GitHub" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.linkedin.com/in/luiz-h-araujo-95050731b/"><img src="./src/assets/img/icon-linkedin.png" alt="Icon-LinkedIn" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
+            <a href="https://www.instagram.com/araujol.web/"><img src="./src/assets/img/icon-instagram.png" alt="Icon-Instagram" class="size-6 cursor-pointer relative transition duration-300 ease-in-out hover:translate-y-2 dark:brightness-0 max-sm:size-6"></a>
         </div>
     </footer>
 </body>
@@ -272,4 +299,5 @@
 <script src="./src/js/theme.js"></script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="./src/js/email.js"></script>
+<script src="./src/js/services.js"></script>
 </html>
